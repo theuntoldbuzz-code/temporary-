@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -126,52 +126,68 @@
         </div>
     </nav>
 
-    <!-- Page Header -->
-    <header class="pt-32 pb-20 bg-white text-center border-b border-gray-100">
-        <p class="text-xs tracking-[0.3em] uppercase text-gray-500 mb-4">Connect</p>
-        <h1 class="font-serif text-6xl">Contact & Location</h1>
+    <!-- Premium Contact Hero -->
+    <header class="relative h-[60vh] w-full overflow-hidden flex items-center">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" alt="Lace Market Hair Studio" class="w-full h-full object-cover">
+        </div>
+        <div class="absolute inset-0 z-10" style="background: linear-gradient(to right, rgba(26,26,26,0.88) 0%, rgba(26,26,26,0.45) 100%);"></div>
+        <div class="relative z-20 max-w-7xl mx-auto px-6 lg:px-12 w-full">
+            <p class="text-xs tracking-[0.4em] uppercase mb-4 pl-1 border-l-2" style="color:#B89768; border-color:#B89768;">Find Us</p>
+            <h1 class="font-serif text-6xl md:text-7xl text-white mb-4 leading-tight">Let's Meet.</h1>
+            <p class="text-gray-300 font-light text-lg max-w-lg">We'd love to welcome you into the studio. Book ahead or give us a call to find a time that suits your schedule.</p>
+        </div>
     </header>
 
-    <section class="py-24 px-6 lg:px-12 max-w-6xl mx-auto flex-grow">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-20">
-            
-            <!-- Contact Details -->
-            <div class="flex flex-col justify-center">
-                <h2 class="font-serif text-4xl mb-8">We await your visit.</h2>
-                <p class="text-gray-500 font-light mb-12 leading-relaxed">Appointments are highly recommended to ensure you receive the dedicated time your hair deserves. Walk-ins are accommodated when possible.</p>
-                
-                <div class="space-y-10 border-l border-gray-300 pl-8">
-                    <div>
-                        <h4 class="text-xs tracking-[0.3em] uppercase text-gray-400 mb-2">Location</h4>
-                        <p class="font-serif text-2xl text-gray-800">1A Plumptre Street<br>Nottingham NG1 1JL</p>
-                    </div>
-                    
-                    <div>
-                        <h4 class="text-xs tracking-[0.3em] uppercase text-gray-400 mb-2">Direct Line</h4>
-                        <p class="font-serif text-2xl text-gray-800"><a href="tel:+447970175942" class="hover:text-accent transition">+44 7970 175942</a></p>
-                    </div>
+    <!-- Three Info Cards (Dark Bar) -->
+    <section class="bg-[#1A1A1A]">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3">
+            <div class="px-10 py-12 border-b md:border-b-0 md:border-r border-gray-700 text-center md:text-left">
+                <div class="mb-4" style="color:#B89768;"><i class="fas fa-map-marker-alt text-2xl"></i></div>
+                <h4 class="text-xs tracking-[0.3em] uppercase text-gray-500 mb-3">Our Address</h4>
+                <p class="font-serif text-2xl text-white leading-snug">1A Plumptre Street<br>Nottingham NG1 1JL</p>
+            </div>
+            <div class="px-10 py-12 border-b md:border-b-0 md:border-r border-gray-700 text-center md:text-left">
+                <div class="mb-4" style="color:#B89768;"><i class="fas fa-phone-alt text-2xl"></i></div>
+                <h4 class="text-xs tracking-[0.3em] uppercase text-gray-500 mb-3">Direct Line</h4>
+                <a href="tel:+447970175942" class="font-serif text-2xl text-white hover:text-yellow-400 transition">+44 7970 175942</a>
+            </div>
+            <div class="px-10 py-12 text-center md:text-left">
+                <div class="mb-4" style="color:#B89768;"><i class="far fa-clock text-2xl"></i></div>
+                <h4 class="text-xs tracking-[0.3em] uppercase text-gray-500 mb-3">Opening Hours</h4>
+                <p class="font-serif text-2xl text-white leading-snug">Mon – Sat: 9am – 8pm<br>Sunday: Closed</p>
+            </div>
+        </div>
+    </section>
 
-                    <div>
-                        <h4 class="text-xs tracking-[0.3em] uppercase text-gray-400 mb-2">Availability</h4>
-                        <p class="font-serif text-2xl text-gray-800">Mon-Sat: 9am — 8pm<br>Sun: Rest Day</p>
-                    </div>
-                </div>
-
-                <div class="mt-16">
-                    <a href="https://booksy.com/en-gb/167542_lace-market-hair-studio_hair-salon_37343_nottingham#ba_s=seo" target="_blank" class="btn-luxury inline-block px-10 py-4 text-xs tracking-[0.2em] uppercase">Book Your Visit</a>
-                </div>
+    <!-- Map + Booking CTA Side by Side -->
+    <section class="flex-grow">
+        <div class="grid grid-cols-1 md:grid-cols-2" style="min-height:520px;">
+            <!-- Google Maps Embed -->
+            <div class="w-full" style="min-height:420px;">
+                <iframe
+                    src="https://maps.google.com/maps?q=1A+Plumptre+St,+Nottingham+NG1+1JL,+UK&output=embed"
+                    width="100%"
+                    height="100%"
+                    style="border:0; display:block; min-height:420px;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="Lace Market Hair Studio Location">
+                </iframe>
             </div>
 
-            <!-- Image/Map abstraction -->
-            <div class="h-[600px] bg-gray-200 relative">
-                <img src="https://images.unsplash.com/photo-1513622470522-26c311512b97?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Nottingham Architecture" class="w-full h-full object-cover">
-                <div class="absolute inset-0 bg-dark bg-opacity-30 flex items-center justify-center">
-                    <a href="https://maps.google.com/?q=1A+Plumptre+St,+Nottingham+NG1+1JL,+UK" target="_blank" class="bg-white text-dark px-8 py-4 text-xs tracking-widest uppercase font-medium hover:bg-accent hover:text-white transition shadow-2xl">
-                        Open in Maps
-                    </a>
+            <!-- Right: CTA Panel with salon background image -->
+            <div class="relative overflow-hidden" style="min-height:420px;">
+                <img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=80" alt="Luxury Salon" class="absolute inset-0 w-full h-full object-cover">
+                <div class="absolute inset-0" style="background: rgba(26,26,26,0.75);"></div>
+                <div class="relative z-10 flex flex-col items-center justify-center h-full text-center px-10 py-16">
+                    <p class="text-xs tracking-[0.4em] uppercase mb-4" style="color:#B89768;">Appointment Only</p>
+                    <h2 class="font-serif text-4xl text-white mb-6 leading-tight">Ready to elevate<br><span class="italic" style="color:#B89768;">your look?</span></h2>
+                    <p class="text-gray-300 font-light mb-10 max-w-sm text-sm leading-relaxed">Our stylists are ready to craft your perfect colour or cut. Secure your chair on Booksy in just a few clicks.</p>
+                    <a href="https://booksy.com/en-gb/167542_lace-market-hair-studio_hair-salon_37343_nottingham#ba_s=seo" target="_blank" class="bg-white text-gray-900 px-10 py-4 text-xs tracking-[0.2em] uppercase font-medium hover:bg-yellow-400 transition">Book Your Appointment</a>
                 </div>
             </div>
-            
         </div>
     </section>
 
